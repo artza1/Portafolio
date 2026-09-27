@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johan Santiago Rueda Caicedo</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="script.js" defer></script>
+    <script src="./js/script.js" defer></script>
+
 </head>
 <body>
     <header class="header">  
@@ -44,18 +45,18 @@
                     <h2>Sobre mí</h2>
                     <p>Desarrollador Junior en formación entusiasmado por la programación y la tecnología, con interés en desarrollo de software, me caracterizo por aprender rápidamente nuevas tecnologías, trabajar en equipo y buscar constantemente mejorar mis habilidades en programación y desarrollo de aplicaciones.</p>
                     <div class="mas_sobre_mi">
-                        <p>Colombia</p>
-                        <p>Campusland</p>
-                        <p>17 años</p>
+                        <p>📍 Colombia</p>
+                        <p>🧑🏻‍🎓 Campusland</p>
+                        <p>📆 17 años</p>
                     </div>
                 </div>
                 <div class="valores_sobre_mi">
                     <ul>
-                        <li>Trabajo en equipo</li>
-                        <li>Responsable y comprometido</li>
-                        <li>Aprendizaje continuo</li>
-                        <li>Resolución de problemas</li>
-                        <li>Buena comunicación</li>
+                        <li>👥 Trabajo en equipo</li>
+                        <li>⏰ Responsable y comprometido</li>
+                        <li>📚 Aprendizaje continuo</li>
+                        <li>🕵️ Resolución de problemas</li>
+                        <li>🗣️ Buena comunicación</li>
                     </ul>
                 </div>
             </div>
@@ -96,21 +97,68 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Algunos que he trabajado</p>
-            <article class="proyecto">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
-            </article>
-            <article class="proyecto">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
-            </article>
-            <article class="proyecto">
-                <h3>Proyecto 3</h3>
-                <p>Descripción del proyecto 3.</p>
-            </article>
+            <div class="caja_proyectos">
+                <h2>Proyectos</h2>
+                <p>Algunos que he trabajado</p>
+                <div class="proyectos">
+                    <article class="proyecto">
+                        <img class="imagen_proyecto" src="../assets/img/proyecto1.webp" alt="Imagen del proyecto 1">
+                        <h3>Fakestore</h3>
+                        <p>Una tienda en línea ficticia aprovechando Apis publicas</p>
+                        <div class="tecnologias">
+                            <p class="tecnologia">HTML</p>
+                            <p class="tecnologia">CSS</p>
+                            <p class="tecnologia">JavaScript</p>
+                        </div>
+                        <div class="VerM">
+                            <button class="btnVM">Ver mas</button>
+                            <a href="https://github.com/artza1/FakeStore" target="_blank"><img class="imagen_contacto" src="../assets/img/github.webp" alt="Logo de github"></a>
+                        </div>
+                        </article>
+                    <article class="proyecto">
+                        <img class="imagen_proyecto" src="../assets/img/proyecto2.webp" alt="Imagen del proyecto 2">
+                        <h3>SpaceX</h3>
+                        <p>Una página web en colaboración con Uber y X, surge SpaceX. Simula pagina de viajes espaciales.</p>
+                        <div class="tecnologias">
+                            <p class="tecnologia">HTML</p>
+                            <p class="tecnologia">CSS</p>
+                        </div>
+                        <div class="VerM">
+                           <button class="btnVM">Ver mas</button>
+                           <a href="https://github.com/joseignacioortizsalazar/UberXSpaceXRides" target="_blank"><img class="imagen_contacto" src="../assets/img/github.webp" alt="Logo de github"></a>
+                        </div>
+                        </article>
+                    <article class="proyecto">
+                        <img class="imagen_proyecto" src="../assets/img/proyecto3.webp" alt="Imagen del proyecto 3">
+                        <h3>Gestor de Gastos</h3>
+                        <p>un simulador de gastos diarios, en el cual se puede registrar y almacenar los datos en un archivo .JSON el cual sera leido posteriormente para el calculo total y por categoria de los costos.</p>
+                        <div class="tecnologias">
+                            <p class="tecnologia"> PYTHON </p>
+                            <p class="tecnologia"> JSON </p>
+                        </div>
+                        <div class="VerM">
+                            <button class="btnVM">Ver mas</button>
+                            <a href="https://github.com/artza1/Proyecto-Simulador-de-gastos" target="_blank"><img class="imagen_contacto" src="../assets/img/github.webp" alt="Logo de github"></a>
+                        </div>
+                        
+                    </article>
+                </div>
+            </div>
         </section>
+
+        <div class="modal" id="modal">
+            <article class="contenido-modal">
+                <button id="cerrar-modal">Cerrar</button>
+                <h3 id="h3-modal"></h3>
+                <p id="p-modal"></p>
+                <p id="tech-modal"></p>
+                <div class="slider">
+                    <button class="flecha izquierda" id="anterior">→</button>
+                    <img id="img-modal">
+                    <button class="flecha derecha" id="siguiente">←</button>
+                </div>
+            </article>
+        </div>
     </main>
 </body>
 <footer>
